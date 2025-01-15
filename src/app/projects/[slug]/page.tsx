@@ -15,12 +15,11 @@ async function getData(slug: string) {
   return data;
 }
 
-// @ts-ignore
-export default async function BlogArticle({
-  params,
-}: {
-  params: { slug: string };
-}) {
+interface Params {
+  slug: string;
+}
+
+export default async function BlogArticle({ params }: { params: Params }) {
   const data: fullBlog = await getData(params.slug);
   return (
     <div className="flex flex-col justify-center mt-8">
