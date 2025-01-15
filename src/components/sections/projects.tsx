@@ -21,14 +21,14 @@ export default async function Projects() {
   console.log(data[0].currentSlug);
 
   return (
-    <div className="mt-32 mx-20">
+    <div className="mt-32 md:mx-20 mx-8">
       <h2 className="font-bold text-4xl">Projects</h2>
-      <div className="flex flex-col justify-center items-center min-w-screen mt-20">
+      <div className="flex flex-col justify-center items-center min-w-screen md:mt-20 mt-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           {data.map((post, index) => (
             <Link href={`/projects/${post.currentSlug}`} key={index}>
               <div className="p-4 bg-white rounded-2xl w-max text-black transform transition-transform duration-300 hover:scale-105">
-                <div className="w-96 h-48 bg-black">
+                <div className="md:w-96 md:h-48 w-80 h-40 bg-black">
                   <Image
                     src={urlFor(post.titleImage).url()}
                     alt={post.title}

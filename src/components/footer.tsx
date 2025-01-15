@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="mt-20">
-      <hr className="mx-7 mt-10 border-4 border-[#E5E8CA]" />
-      <div className="my-10 mx-11 flex justify-between items-center">
+      <hr className="mx-7 mt-10 md:border-4 border-2 border-[#E5E8CA]" />
+      <div className="my-10 mx-11 flex flex-col md:flex-row justify-between items-center">
         <Image src="/Eikeneslogofull.svg" alt="logo" width={300} height={67} />
-        <p className="font-normal text-xl">
+        <p className="font-normal text-lg md:text-xl mt-4 md:mt-0">
           © 2024 Sander Eikenes. All rights reserved
         </p>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 mt-4 md:mt-0">
           <Image
             src="/socialicons/instagram.png"
             alt="Instagram"
