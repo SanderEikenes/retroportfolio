@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "@/components/nav";
+import Footer from "@/components/footer";
 import { League_Spartan } from "next/font/google";
 
 const leagueSpartan = League_Spartan({
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body className={`${leagueSpartan.className} antialiased`}>
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -11,15 +11,15 @@ export default function Nav() {
           </Link>
         </div>
         <div className="flex items-center space-x-16 text-2xl font-normal">
-          <Link href="/projects">
+          <Link href="/#projects">
             <p>Projects</p>
           </Link>
 
-          <Link href="/about">
+          <Link href="/#about">
             <p>About</p>
           </Link>
 
-          <Link href="/contact">
+          <Link href="/#contact">
             <p>Contact</p>
           </Link>
         </div>
