@@ -15,6 +15,7 @@ async function getData(slug: string) {
   return data;
 }
 
+// @ts-ignore
 export default async function BlogArticle({
   params,
 }: {
