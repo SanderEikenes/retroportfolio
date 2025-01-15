@@ -15,12 +15,10 @@ async function getData(slug: string) {
   return data;
 }
 
-interface Params {
-  slug: string;
-}
+type tParams = Promise<{ slug: string }>;
 
-export default async function BlogArticle({ params }: { params: Params }) {
-  const data: fullBlog = await getData(params.slug);
+export default async function BlogArticle(props: { params: tParams }) {
+  const data: fullBlog = await getData((await props.params).slug);
   return (
     <div className="flex flex-col justify-center mt-8">
       <Image
