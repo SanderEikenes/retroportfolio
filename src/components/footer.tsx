@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -10,25 +11,35 @@ export default function Footer() {
           © 2024 Sander Eikenes. All rights reserved
         </p>
         <div className="flex space-x-4 mt-4 md:mt-0">
-          <Image
-            src="/socialicons/instagram.png"
-            alt="Instagram"
-            width={30}
-            height={30}
-          />
-          <Image
-            src="/socialicons/github.png"
-            alt="Github"
-            width={30}
-            height={30}
-          />
-          <Image
-            src="/socialicons/linkedin.png"
-            alt="LinkedIn"
-            width={30}
-            height={30}
-          />
-          <Image src="/socialicons/x.png" alt="X" width={30} height={30} />
+          <Link href={"https://www.instagram.com/sandreikenes/"}>
+            <Image
+              src="/socialicons/instagram.png"
+              alt="Instagram"
+              width={30}
+              height={30}
+            />
+          </Link>
+
+          <Link href={"https://github.com/sanderEikenes"}>
+            <Image
+              src="/socialicons/github.png"
+              alt="Github"
+              width={30}
+              height={30}
+            />
+          </Link>
+
+          <Link href={"https://www.linkedin.com/in/sander-eikenes/"}>
+            <Image
+              src="/socialicons/linkedin.png"
+              alt="LinkedIn"
+              width={30}
+              height={30}
+            />
+          </Link>
+          <Link href={"https://x.com/SandrEikenes"}>
+            <Image src="/socialicons/x.png" alt="X" width={30} height={30} />
+          </Link>
         </div>
       </div>
     </footer>

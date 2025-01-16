@@ -3,6 +3,8 @@ import { sanityClient, urlFor } from "../../lib/sanity";
 import { simpleBlogCard } from "@/lib/interface";
 import Link from "next/link";
 
+export const revalidate = 30;
+
 async function getData() {
   const query = `*[_type == 'blog'] | order(_createdAt desc) {
     title,
