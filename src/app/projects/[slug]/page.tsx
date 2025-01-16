@@ -31,7 +31,7 @@ export default async function BlogArticle(props: { params: tParams }) {
         className="rounded-2xl my-8 mx-auto"
       />
       <h1 className="text-3xl font-bold mx-auto">{data.title}</h1>
-      <div className="prose prose-lg mx-auto prose-invert prose-h4:text-3xl">
+      <div className="prose md:prose-lg mx-4 md:mx-auto prose-invert prose-h4:text-3xl overflow-hidden break-words">
         <PortableText value={data.content} />
       </div>
     </div>
