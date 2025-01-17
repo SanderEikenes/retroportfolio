@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <div className="flex justify-between items-center md:mx-40 ">
       <div className="flex items-center mt-20 font-bold w-full  ">
-        <div className="mx-auto md:mx-0 md:w-full">
+        <div className="mx-auto md:mx-0 md:w-full animate-fadeIn delay-150">
           <h3 className="text-5xl font-semibold w-max md:w-full">Hi, I'm</h3>
           <h1 className="text-8xl w-max ">
             Sander <br />

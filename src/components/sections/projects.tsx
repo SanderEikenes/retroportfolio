@@ -10,16 +10,19 @@ async function getData() {
     title,
     smallDescription,
     "currentSlug": slug.current,
-    titleImage,   
+    titleImage,
+    tags,
   }`;
 
   const data = await sanityClient.fetch(query);
+  console.log(data);
 
   return data;
 }
 
 export default async function Projects() {
   const data: simpleBlogCard[] = await getData();
+
   console.log(data[0].currentSlug);
 
   return (
@@ -40,7 +43,16 @@ export default async function Projects() {
                   />
                 </div>
                 <h2 className="font-bold text-3xl mt-4">{post.title}</h2>
-                <p className="font-normal text-xl">{post.smallDescription}</p>
+                <div className="space-x-2 mt-2">
+                  {post.tags.map((tag: string, index: number) => (
+                    <span
+                      key={index}
+                      className="bg-black text-white px-2 py-1 rounded-full text-sm"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </Link>
           ))}
