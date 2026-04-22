@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="my-10 mx-11 flex flex-col md:flex-row justify-between items-center">
         <Image src="/Eikeneslogofull.svg" alt="logo" width={300} height={67} />
         <p className="font-normal text-lg md:text-xl mt-4 md:mt-0">
-          © 2024 Sander Eikenes. All rights reserved
+          © 2026 Sander Eikenes. All rights reserved
         </p>
         <div className="flex space-x-4 mt-4 md:mt-0">
           <Link href={"https://www.instagram.com/sandreikenes/"}>

@@ -18,10 +18,6 @@ export default function Nav() {
           <Link href="/#about">
             <p>About</p>
           </Link>
-
-          <Link href="/#contact">
-            <p>Contact</p>
-          </Link>
         </div>
       </div>
       <div className="md:hidden mx-4 flex items-center justify-between mt-4">
@@ -37,10 +33,6 @@ export default function Nav() {
 
           <Link href="/#about">
             <p>About</p>
-          </Link>
-
-          <Link href="/#contact">
-            <p>Contact</p>
           </Link>
         </div>
       </div>

@@ -6,12 +6,13 @@ import Link from "next/link";
 export const revalidate = 30;
 
 async function getData() {
-  const query = `*[_type == 'blog'] | order(_createdAt desc) {
+  const query = `*[_type == 'blog'] | order(order asc) {
     title,
     smallDescription,
     "currentSlug": slug.current,
     titleImage,
     tags,
+    order
   }`;
 
   const data = await sanityClient.fetch(query);

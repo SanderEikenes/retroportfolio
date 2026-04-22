@@ -20,6 +20,9 @@ export default {
       name: 'titleImage',
       type: 'image',
       title: 'Image',
+      options: {
+        hotspot: true,
+      },
     },
     {
       name: 'smallDescription',
@@ -45,6 +48,11 @@ export default {
           type: 'string',
         },
       ],
+    },
+    {
+      name: 'order',
+      type: 'number',
+      title: 'Order',
     },
   ],
 }

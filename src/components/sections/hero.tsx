@@ -15,11 +15,11 @@ export default function Hero() {
             Developer
           </h2>
           <h2 className="w-max text-5xl font-semibold hidden md:block">
-            Web designer & Developer
+            Fullstack Developer
           </h2>
           <h1 className="font-normal text-xl w-max ">
-            I'm a web developer from Norway <br /> with several client projects
-            completed.
+            I'm a fullstack developer with several projects under my belt,{" "}
+            <br /> and a passion for creating functional software.
           </h1>
         </div>
       </div>
